@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 @Entity
 public class Aluno {
 
+    public static final String API = "api/v1/aluno";
+
     @Id
     @GeneratedValue
     private int id;

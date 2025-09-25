@@ -5,6 +5,9 @@ import org.example.repositories.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+
 @Service
 public class AlunoService {
 
@@ -13,5 +16,9 @@ public class AlunoService {
 
     public Aluno add (Aluno aluno){
         return  alunoRepository.save(aluno);
+    }
+
+    public List<Aluno> get(){
+        return alunoRepository.findAll();
     }
 }
